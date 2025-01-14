@@ -12,5 +12,6 @@ export class HomeComponent {
   title: string;
   constructor(private homeService: HomeService) {
     this.title = this.homeService.getMessage("This Is From Home Component")
+    this.homeService.getService('https://fakestoreapi.com/products') 
   }
 }
