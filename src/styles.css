@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout container */
+.layoutt {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Outer content container */
+.outerContent {
+  flex-grow: 1; /* Fill remaining vertical space */
+  display: flex; /* Flex to enable horizontal and vertical alignment */
+  justify-content: center; /* Center horizontally */
+  /* align-items: stretch; Make child occupy all vertical space */
+  /* background-color: yellow; Background color for visibility */
+  /* overflow-y: auto; Add scrolling if content overflows */
+}
+
+/* Inner content box */
+.content {
+  width: 90%; /* Set width to 80% of the parent */
+  max-width: 1200px; /* Optional: Limit maximum width */
+  /* background-color: red; Background for visibility */
+  overflow-y: auto; /* Allow inner scrolling if needed */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
+}

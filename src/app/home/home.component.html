@@ -1,1 +1,14 @@
 <p>home works {{title}}!</p>
+<div class="grid grid-flow-row auto-rows-auto grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5">
+    <div class=" shadow-xl" *ngFor="let item of todoItems">
+        <nz-card style="width:300px;" nzTitle={{item.title}}>
+            <p>{{item.id}} </p>
+            <p>{{item.title}} </p>
+            <p>{{item.status}} </p>
+            <p>{{item.priority}} </p>
+            <p>{{item.description}} </p>
+            <p>{{item.dueDate}} </p>
+            <p>{{item.tags[0]}} {{item.tags[1] }} </p>
+        </nz-card>
+    </div>
+</div>
