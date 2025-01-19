@@ -1,1 +1,13 @@
-<p>add works!</p>
+<div class="flex justify-center">
+    <div class="flex flex-col items-center gap-y-5 w-[600px]">
+        <div class="w-[100%]" *ngFor="let item of objKeys">
+            <div class="flex flex-col  ">
+                <label for="{{newTodo[item]}}">{{item}}</label>
+                <input class="" nz-input placeholder="Basic usage" [(ngModel)]="newTodo[item]" />
+            </div>
+        </div>
+        <div class="flex justify-end w-[100%]">
+            <button nz-button nzType="primary" (click)="consoleLog(newTodo)">  Submit</button>
+        </div>
+    </div>
+</div>

@@ -11,9 +11,9 @@ export const appRoutes: Routes = [
         children: [
             { path: 'home', component: HomeComponent },
             { path: 'add', component: AddComponent },
-            { path: 'view-item/:id', component: ViewByIdComponent },
-            { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
-            { path: '**', redirectTo: '/home', pathMatch: 'full' }, // Wildcard route
+            { path: 'view/:id', component: ViewByIdComponent },
+            // { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+            // { path: '**', redirectTo: '/home', pathMatch: 'full' }, // Wildcard route
 
         ],
     },
